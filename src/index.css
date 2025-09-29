@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 90%;
 
-    /* Wine-red accent system - Enhanced for more pop */
-    --primary: 0 85% 35%;
+    /* Wine-red accent system - Vibrant wine tone */
+    --primary: 350 75% 25%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 0 90% 45%;
+    --primary-hover: 350 80% 35%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 80%;
@@ -29,7 +29,7 @@ All colors MUST be HSL.
     --muted: 0 0% 14%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 0 85% 35%;
+    --accent: 350 75% 25%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 80% 50%;
@@ -37,15 +37,15 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 15%;
-    --ring: 0 85% 35%;
+    --ring: 350 75% 25%;
 
-    /* Wine-red gradient system - Enhanced */
-    --gradient-wine: linear-gradient(135deg, hsl(0 85% 35%), hsl(0 90% 45%));
+    /* Wine-red gradient system - True wine tone */
+    --gradient-wine: linear-gradient(135deg, hsl(350 75% 25%), hsl(350 80% 35%));
     --gradient-dark: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 12%));
     
-    /* Enhanced glow effects */
-    --wine-glow: 0 0 25px hsl(0 85% 35% / 0.6);
-    --wine-glow-intense: 0 0 40px hsl(0 90% 45% / 0.9);
+    /* Wine-toned glow effects */
+    --wine-glow: 0 0 25px hsl(350 75% 25% / 0.6);
+    --wine-glow-intense: 0 0 40px hsl(350 80% 35% / 0.9);
 
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
