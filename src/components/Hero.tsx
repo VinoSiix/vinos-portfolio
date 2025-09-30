@@ -40,14 +40,8 @@ const Hero = () => {
           </button>
           
           <div className="flex space-x-4">
-            <a href="https://github.com" className="p-3 glass-effect rounded-full hover:text-primary transition-colors" aria-label="GitHub">
+            <a href="https://github.com/VinoSiix" className="p-3 glass-effect rounded-full hover:text-primary transition-colors" aria-label="GitHub">
               <Github size={24} />
-            </a>
-            <a href="https://linkedin.com" className="p-3 glass-effect rounded-full hover:text-primary transition-colors" aria-label="LinkedIn">
-              <Linkedin size={24} />
-            </a>
-            <a href="mailto:vino@example.com" className="p-3 glass-effect rounded-full hover:text-primary transition-colors" aria-label="Email">
-              <Mail size={24} />
             </a>
           </div>
         </div>

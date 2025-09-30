@@ -20,20 +20,6 @@ const Footer = () => {
               >
                 <Github size={20} />
               </a>
-              <a 
-                href="https://linkedin.com" 
-                className="p-2 glass-effect rounded-full hover:border-primary/50 hover:text-primary transition-all"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a 
-                href="mailto:vino@example.com" 
-                className="p-2 glass-effect rounded-full hover:border-primary/50 hover:text-primary transition-all"
-                aria-label="Email"
-              >
-                <Mail size={20} />
-              </a>
             </div>
           </div>
 

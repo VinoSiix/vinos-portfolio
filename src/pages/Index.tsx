@@ -7,7 +7,6 @@ import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
-import ChatWidget from '@/components/ChatWidget';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -27,7 +26,6 @@ const Index = () => {
       <Projects />
       <About />
       <Contact />
-      <ChatWidget />
       <Footer />
     </div>
   );

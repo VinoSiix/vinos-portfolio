@@ -4,16 +4,16 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "AI Chat Assistant",
-      description: "Advanced conversational AI with natural language processing and context awareness.",
-      tech: ["React", "Python", "OpenAI", "FastAPI"],
+      title: "Telegram AI Bot",
+      description: "An AI-powered Telegram bot built using n8n workflow automation platform",
+      tech: ["n8n", "Telegram API", "AI", "LLM"],
       image: "🤖",
     },
     {
-      title: "Smart Analytics Dashboard",
-      description: "Real-time data visualization with AI-powered insights and predictive analytics.",
-      tech: ["Vue.js", "D3.js", "TensorFlow", "Node.js"],
-      image: "📊",
+      title: "Gmail Sorter",
+      description: "A Gmail sorting automation tool that organizes emails using AI algorithms",
+      tech: ["n8n", "Google API", "AI", "LLM"],
+      image: "📫",
     },
     {
       title: "ML-Powered E-commerce",
@@ -85,10 +85,28 @@ const Projects = () => {
               </div>
               
               <div className="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors">
-                  <Github size={18} />
-                  <span>Code</span>
-                </button>
+                {index === 0 ? (
+                  <button 
+                    className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
+                    onClick={() => window.open('https://github.com/VinoSiix/N8N-telegram-bot/tree/main', '_blank')}
+                  >
+                    <Github size={18} />
+                    <span>Code</span>
+                  </button>
+                ) : index === 1 ? (
+                  <button 
+                    className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
+                    onClick={() => window.open('https://github.com/VinoSiix/gmail-sorter', '_blank')}
+                  >
+                    <Github size={18} />
+                    <span>Code</span>
+                  </button>
+                ) : (
+                  <button className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors">
+                    <Github size={18} />
+                    <span>Code</span>
+                  </button>
+                )}
                 <button className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors">
                   <ExternalLink size={18} />
                   <span>Live Demo</span>
