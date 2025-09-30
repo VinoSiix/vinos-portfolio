@@ -1,56 +1,53 @@
-# Welcome to your Lovable project
+# Vino's Portfolio
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/2c620401-cf05-42a1-b988-1d9f01ed2e02
+This is my personal portfolio website showcasing my AI development projects and skills.
 
-## How can I edit this code?
+**Live URL**: https://vinos-portfolio.vercel.app/
 
-There are several ways of editing your application.
+## How to Edit This Code
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2c620401-cf05-42a1-b988-1d9f01ed2e02) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+You can edit this application in several ways:
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Clone this repo and work locally using your own IDE. Pushed changes will be reflected in the deployed portfolio.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Requirements:
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install the necessary dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server with auto-reloading and an instant preview
 npm run dev
 ```
 
 **Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Navigate to the desired file(s)
+- Click the "Edit" button (pencil icon) at the top right of the file view
+- Make your changes and commit them
 
 **Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Navigate to the main page of your repository
+- Click on the "Code" button (green button) near the top right
+- Select the "Codespaces" tab
+- Click on "New codespace" to launch a new Codespaces environment
+- Edit files directly within the Codespace and commit and push your changes when done
 
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
@@ -60,14 +57,24 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/2c620401-cf05-42a1-b988-1d9f01ed2e02) and click on Share -> Publish.
+This portfolio is deployed on Vercel. To deploy your own version:
 
-## Can I connect a custom domain to my Lovable project?
+1. Create a Vercel account at [vercel.com](https://vercel.com)
+2. Connect your GitHub repository to Vercel
+3. Configure the build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+4. Deploy and enjoy your live portfolio
 
-Yes, you can!
+## Custom Domain
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you want to connect a custom domain to your portfolio, you can do so through your Vercel dashboard:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Go to your project settings in Vercel
+2. Navigate to the "Domains" section
+3. Add your custom domain
+4. Follow Vercel's DNS configuration instructions
+
+For more information, see [Vercel's custom domain documentation](https://vercel.com/docs/concepts/projects/domains/add-a-domain).
