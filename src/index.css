@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Default theme variables */
+    --radius: 0.5rem;
+  }
+  
+  /* Dark theme (default) */
+  .dark-theme {
+    /* Vino's Dark Portfolio Theme */
+    --background: 0 0% 10%;
+    --foreground: 0 0% 90%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 90%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 90%;
+
+    /* Wine-red accent system - Vibrant wine tone */
+    --primary: 350 75% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 350 80% 35%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 80%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 350 75% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 350 75% 25%;
+
+    /* Wine-red gradient system - True wine tone */
+    --gradient-wine: linear-gradient(135deg, hsl(350 75% 25%), hsl(350 80% 35%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 12%));
+    
+    /* Wine-toned glow effects */
+    --wine-glow: 0 0 25px hsl(350 75% 25% / 0.6);
+    --wine-glow-intense: 0 0 40px hsl(350 80% 35% / 0.9);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  /* Light theme */
+  .light-theme {
+    --background: 0 0% 95%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Wine-red accent system - Vibrant wine tone */
+    --primary: 350 75% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 350 80% 35%;
+
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 30%;
+
+    --accent: 350 75% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 90%;
+    --ring: 350 75% 25%;
+
+    /* Wine-red gradient system - True wine tone */
+    --gradient-wine: linear-gradient(135deg, hsl(350 75% 25%), hsl(350 80% 35%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 95%), hsl(0 0% 90%));
+    
+    /* Wine-toned glow effects */
+    --wine-glow: 0 0 25px hsl(350 75% 25% / 0.6);
+    --wine-glow-intense: 0 0 40px hsl(350 80% 35% / 0.9);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  /* Dark+ theme */
+  .darkplus-theme {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Wine-red accent system - Vibrant wine tone */
+    --primary: 350 80% 30%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 350 85% 40%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 350 80% 30%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 350 80% 30%;
+
+    /* Wine-red gradient system - True wine tone */
+    --gradient-wine: linear-gradient(135deg, hsl(350 80% 30%), hsl(350 85% 40%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 3%), hsl(0 0% 8%));
+    
+    /* Wine-toned glow effects */
+    --wine-glow: 0 0 30px hsl(350 80% 30% / 0.7);
+    --wine-glow-intense: 0 0 50px hsl(350 85% 40% / 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    background: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 12%));
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Wine-red interactive elements */
+  .wine-btn {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold;
+    @apply hover:bg-[hsl(var(--primary-hover))] transition-all duration-300;
+    @apply hover:shadow-[var(--wine-glow)] transform hover:scale-105;
+    transition: var(--transition-bounce);
+  }
+
+  .wine-link {
+    @apply text-foreground hover:text-primary transition-colors duration-300;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5;
+    @apply after:bg-primary after:transition-all after:duration-300;
+    @apply hover:after:w-full;
+  }
+
+  .project-card {
+    @apply bg-card border border-border rounded-xl p-6;
+    @apply hover:border-primary hover:shadow-[var(--wine-glow)];
+    @apply transform transition-all duration-300 hover:scale-105;
+    @apply hover:bg-gradient-to-br hover:from-card hover:to-muted;
+  }
+
+  .glass-effect {
+    @apply bg-card/50 backdrop-blur-md border border-border/50;
+  }
+}

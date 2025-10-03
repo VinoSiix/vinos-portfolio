@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/Timppam6/vino-code-craft
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = vinos-portfolio
+	vscode-merge-base = origin/main
+	merge = refs/heads/main
+[remote "vinos-portfolio"]
+	url = https://github.com/VinoSiix/vinos-portfolio.git
+	fetch = +refs/heads/*:refs/remotes/vinos-portfolio/*
+[branch "update-portfolio"]
+	vscode-merge-base = vinos-portfolio/main
